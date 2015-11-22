@@ -1,0 +1,9 @@
+// BEGIN_INTERNALS
+/*
+DIR: code code\game code\game\machinery 
+AUTO_FILE_DIR: ON
+MAP_ICON_TYPE: 0
+WINDOW: code\game\machinery\doors\airlock.dm;code\game\machinery\doors\door.dm;code\game\machinery\machinery.dm;code\game\atoms.dm
+FILE: code\game\atoms.dm
+*/
+// END_INTERNALS
