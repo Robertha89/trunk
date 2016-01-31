@@ -26,28 +26,6 @@
 			viewers(user) << "\red <b>[user] is being strangled by [affecting.name]! It looks like \he's trying to commit suicide; somehow...</b>"
 		return (OXYLOSS)
 
-/obj/item/weapon/grab/proc/throw()
-
-	if(affecting)
-		if(state >= 2)
-			var/grabee = affecting
-			spawn(1)
-				del(src)
-			return grabee
-		else
-			spawn(1)
-				del(src)
-			return null
-
-	else if(structure)
-		var/grabee = structure
-		spawn(1)
-			del(src)
-		return grabee
-
-	return null
-
-
 /obj/item/weapon/grab/proc/synch()
 	if(affecting)
 		if(affecting.anchored)//This will prevent from grabbing people that are anchored.
